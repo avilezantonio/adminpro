@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent implements OnInit {
 
+  @Input()
   title: string = 'Title goes here';
+  @Input()
   progressValue: number = 20;
-  constructor() { }
+
+  @Output()
+  updateProgress: EventEmitter<number> = new EventEmitter();
+  constructor() {
+  }
 
   ngOnInit() {
   }
@@ -18,6 +24,7 @@ export class CounterComponent implements OnInit {
     const nextValue: number = this.progressValue + value;
     if (nextValue <= 100 && nextValue >= 0) {
       this.progressValue = nextValue;
+      this.updateProgress.emit(this.progressValue);
     }
   }
 
