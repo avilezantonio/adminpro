@@ -4,14 +4,23 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
+import { ProgressComponent } from './progress/progress.component';
+import { FormsModule } from '@angular/forms';
+import { CustomModule } from '../custom/custom.module';
+
 
 @NgModule({
     declarations: [
         PagesComponent,
         DashboardComponent,
-        GraphicsComponent],
-    imports: [SharedModule,
-        PAGES_ROUTES],
+        GraphicsComponent,
+        ProgressComponent],
+    imports: [
+        SharedModule,
+        PAGES_ROUTES,
+        FormsModule,
+        CustomModule
+    ],
     exports: [
         DashboardComponent,
         GraphicsComponent],
