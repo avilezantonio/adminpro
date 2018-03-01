@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { CustomModule } from '../custom/custom.module';
 
 
+
 @NgModule({
     declarations: [
         PagesComponent,
