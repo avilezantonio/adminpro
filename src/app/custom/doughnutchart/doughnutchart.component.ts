@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-chart',
-  templateUrl: './chart.component.html',
+  selector: 'app-doughnutchart',
+  templateUrl: './doughnutchart.component.html',
   styles: []
 })
-export class ChartComponent implements OnInit {
+export class DoughnutChartComponent implements OnInit {
 
   @Input('title')
   public chartTitle: string = '';

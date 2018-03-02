@@ -11,7 +11,7 @@ export class GraphicsComponent implements OnInit {
     'grafico1': {
       'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
       'data': [24, 30, 46],
-      'type': 'radarChartType',
+      'type': 'doughnut',
       'leyenda': 'El pan se come con'
     },
     'grafico2': {
