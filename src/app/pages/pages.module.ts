@@ -7,6 +7,7 @@ import { PAGES_ROUTES } from './pages.routes';
 import { ProgressComponent } from './progress/progress.component';
 import { FormsModule } from '@angular/forms';
 import { CustomModule } from '../custom/custom.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -15,7 +16,8 @@ import { CustomModule } from '../custom/custom.module';
         PagesComponent,
         DashboardComponent,
         GraphicsComponent,
-        ProgressComponent],
+        ProgressComponent,
+        AccountSettingsComponent],
     imports: [
         SharedModule,
         PAGES_ROUTES,
